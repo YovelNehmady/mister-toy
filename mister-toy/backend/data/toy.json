@@ -2,7 +2,19 @@
   {
     "_id": "t101",
     "name": "Edit",
-    "price": 555,
+    "price": 123456,
+    "labels": [
+      "Doll",
+      "Battery Powered",
+      "Baby"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "t102",
+    "name": "Muki",
+    "price": 123,
     "labels": [
       "Doll",
       "Battery Powered",
@@ -34,17 +46,5 @@
     ],
     "createdAt": 1631031801011,
     "inStock": true
-  },
-  {
-    "name": "new one",
-    "price": 666,
-    "labels": [
-      "Doll",
-      "Battery Powered",
-      "Baby"
-    ],
-    "createdAt": 1673302639950,
-    "inStock": true,
-    "_id": "NrxQ9"
   }
 ]
