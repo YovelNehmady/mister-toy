@@ -11,29 +11,17 @@ export const toyService = {
     getById,
     save,
     remove,
-    getEmptyToy
+    getEmptyToy,
+    getEmptyFilter
 }
 
-function query(filterBy = null) {
-    return storageService.query(STORAGE_KEY)
-    // if (!filterBy.txt && !filterBy.isDone) return storageService.query(STORAGE_KEY)
-
-    // if (filterBy.txt) {
-    //     const regex = new RegExp(filterBy.txt, 'i')
-    //     return storageService.query(STORAGE_KEY)
-    //         .then(toys => toys.filter(toy => regex.test(toy.txt)))
-    // }
-
-    // if (filterBy.isDone !== undefined) {
-    //     if (filterBy.isDone === 'true') return storageService.query(STORAGE_KEY)
-    //         .then(toys => toys.filter(toy => toy.isDone)).then(toys => toys)
-
-    //     if (filterBy.isDone === 'false') return storageService.query(STORAGE_KEY)
-    //         .then(toys => toys.filter(toy => !toy.isDone)).then(toys => toys)
-
-    //     if (filterBy.isDone === 'undefined') return storageService.query(STORAGE_KEY)
-    //         .then(toys => toys)
-    // }
+function query(filterBy) {
+    if(!filterBy.name || !filterBy) return storageService.query(STORAGE_KEY)
+    if (filterBy.name) {
+        const regex = new RegExp(filterBy.name, 'i')
+        return storageService.query(STORAGE_KEY)
+            .then(toys => toys.filter(toy => regex.test(toy.name)))
+    }
 }
 
 function getById(toyId) {
@@ -58,6 +46,16 @@ function getEmptyToy() {
         price: 0,
         labels: [],
         inStock: true
+    }
+}
+
+function getEmptyFilter() {
+    return {
+        name: '',
+        inStock: undefined,
+        sortBy: null,
+        desc: 1
+
     }
 }
 

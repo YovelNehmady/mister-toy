@@ -31,7 +31,6 @@ export function toyReducer(state = initialState, action) {
         default:
             return state
     }
-
 }
 
 
