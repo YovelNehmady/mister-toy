@@ -1,6 +1,9 @@
+import { GoogleMap } from "../cmps/google-map";
+
 export function AboutUs() {
     return <section className="about">
         <h3>About us...</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima in, eos soluta rerum nisi labore accusantium quibusdam doloremque perspiciatis molestias quidem voluptatem modi id reiciendis sapiente cupiditate, fuga quae? Temporibus ratione eaque culpa praesentium? Similique, quibusdam atque temporibus dolorum maiores explicabo blanditiis quae corrupti. Iure ratione, enim quisquam saepe porro incidunt. Quia culpa quidem, et at, dolorum fuga delectus architecto in ipsa aspernatur quisquam pariatur? Deleniti earum doloremque dolor fuga culpa laboriosam quos autem voluptates perspiciatis nesciunt nam magnam cumque sunt illum odio quia iusto ducimus totam at veritatis, fugit quas nobis. Ad similique quos corrupti voluptatum ullam soluta laborum dicta, earum sunt iste pariatur eum odit ratione aperiam cum voluptas autem in natus consectetur dolore obcaecati! Inventore ducimus, adipisci numquam modi similique iusto facilis accusamus deserunt quis quisquam sed. Vero repudiandae porro, inventore autem voluptas laudantium dolorum qui vitae facere, expedita accusantium. Quis, laudantium et in tempore doloribus doloremque.</p>
+        
+        <GoogleMap />
     </section>
 }

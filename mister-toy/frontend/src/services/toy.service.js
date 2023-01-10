@@ -9,15 +9,19 @@ export const toyService = {
     save,
     remove,
     getEmptyToy,
-    getEmptyFilter
+    getEmptyFilter,
+    getEmptySort
 }
 
-function query(filterBy) {
+function query(filterBy, sortBy) {
     return httpService.get(BASE_URL)
         .then(toys => {
             if (filterBy.name) {
                 const regex = new RegExp(filterBy.name, 'i')
                 toys = toys.filter(toy => regex.test(toy.name))
+            }
+            if (sortBy.sortBy) {
+                toys.sort((t1, t2) => (t1[sortBy.sortBy] - t2[sortBy.sortBy]) * sortBy.desc)
             }
             return toys
         })
@@ -33,9 +37,9 @@ function remove(toyId) {
 
 function save(toy) {
     if (toy._id) {
-        return httpService.put(BASE_URL ,toy)
+        return httpService.put(BASE_URL, toy)
     } else {
-        return httpService.post(BASE_URL ,toy)
+        return httpService.post(BASE_URL, toy)
     }
 }
 
@@ -52,7 +56,12 @@ function getEmptyFilter() {
     return {
         name: '',
         inStock: undefined,
-        sortBy: null,
+    }
+}
+
+function getEmptySort() {
+    return {
+        sortBy: '',
         desc: 1
     }
 }

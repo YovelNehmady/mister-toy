@@ -8,13 +8,11 @@ import { loadToys, removeToy } from "../store/toy.action"
 export function ToyIndex() {
     const { toys } = useSelector(state => state.toyModule)
     const { filterBy } = useSelector(state => state.appModule)
-    
-    //TODO: the filter dot work well, its in dilay
-    //TODO: the edit/add cmp do render before the save that crash the site
+    const { sortBy } = useSelector(state => state.appModule)
 
     useEffect(() => {
-        loadToys(filterBy)
-    }, [filterBy])
+        loadToys(filterBy, sortBy)
+    }, [filterBy, sortBy])
 
     function onRemoveToy(toyId) {
         removeToy(toyId)

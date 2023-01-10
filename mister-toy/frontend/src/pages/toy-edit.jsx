@@ -20,7 +20,7 @@ export function ToyEdit() {
 
     function onSubmit(ev) {
         ev.preventDefault()
-        const newToy = {...toyToEdit}
+        const newToy = { ...toyToEdit }
         saveToy(newToy)
         navigate('/toy')
     }
@@ -49,12 +49,6 @@ export function ToyEdit() {
                 onChange={handleChange}
                 value={price} />
 
-            <input type="text"
-                name="labels"
-                id="labels"
-                placeholder="Enter the Toy's labels, spred by coma..."
-                onChange={handleChange}
-                value={labels} />
 
 
             <button>{toyId ? 'Etid' : 'Add'}</button>
