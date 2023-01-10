@@ -20,7 +20,8 @@ export function ToyEdit() {
 
     function onSubmit(ev) {
         ev.preventDefault()
-        saveToy(toyToEdit)
+        const newToy = {...toyToEdit}
+        saveToy(newToy)
         navigate('/toy')
     }
 
