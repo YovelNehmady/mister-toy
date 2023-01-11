@@ -9,7 +9,7 @@
       "Baby"
     ],
     "createdAt": 1631031801011,
-    "inStock": true
+    "inStock": false
   },
   {
     "_id": "t102",
@@ -36,15 +36,14 @@
     "inStock": true
   },
   {
-    "_id": "t104",
-    "name": "Luki",
-    "price": 123,
+    "name": "yovelll",
+    "price": 55,
+    "inStock": true,
     "labels": [
-      "Doll",
-      "Battery Powered",
-      "Baby"
+      "Box game",
+      "Art"
     ],
-    "createdAt": 1631031801011,
-    "inStock": true
+    "_id": "qtZyW",
+    "createdAt": 1673464470492
   }
 ]
