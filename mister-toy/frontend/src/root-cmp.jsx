@@ -1,4 +1,4 @@
-import './assets/style/main.css'
+import './assets/scss/style.scss'
 
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { ToyIndex } from './pages/toy-index'
