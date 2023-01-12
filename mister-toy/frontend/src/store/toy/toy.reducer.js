@@ -1,4 +1,3 @@
-
 export const SET_TOYS = 'SET_TOYS'
 export const REMOVE_TOY = 'REMOVE_TOY'
 export const UPDATE_TOY = 'UPDATE_TOY'
@@ -7,7 +6,6 @@ export const ADD_TOY = 'ADD_TOY'
 const initialState = {
     toys: []
 }
-
 
 export function toyReducer(state = initialState, action) {
     let toys

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { ToyFilter } from "../cmps/toy-filter"
 import { ToyList } from "../cmps/toy-list"
-import { loadToys, removeToy } from "../store/toy.action"
+import { loadToys, removeToy } from "../store/toy/toy.action"
 
 export function ToyIndex() {
     const { toys } = useSelector(state => state.toyModule)
@@ -20,7 +20,6 @@ export function ToyIndex() {
 
     return <section className="toy-index">
         <ToyFilter />
-
         <Link to={'/toy/edit'}><button>Add new toy</button></Link>
         <ToyList toys={toys} onRemoveToy={onRemoveToy} />
     </section>

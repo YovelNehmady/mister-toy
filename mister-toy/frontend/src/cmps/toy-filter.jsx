@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { toyService } from "../services/toy.service"
-import { SET_FILTER, SET_SORT } from "../store/app-reducer"
+import { SET_FILTER, SET_SORT } from "../store/app/app-reducer"
 import { MultipleSelectChip } from "./multiple-select-chip"
 
 export function ToyFilter() {
@@ -15,7 +15,7 @@ export function ToyFilter() {
 
     function handleChange({ target }) {
         let { name, value } = target
-        if ( name === 'inStock') value = elInStockRef.current.checked ? true : false
+        if (name === 'inStock') value = elInStockRef.current.checked ? true : false
         setFilter((prevFilter) => { return { ...prevFilter, [name]: value, labels } })
     }
 
@@ -30,12 +30,12 @@ export function ToyFilter() {
     }, [filter])
 
     useEffect(() => {
-        setFilter((prevFilter) => ({ ...prevFilter, labels }))
-    }, [labels])
-
-    useEffect(() => {
         dispatch({ type: SET_SORT, sortBy: sort })
     }, [sort])
+
+    useEffect(() => {
+        setFilter((prevFilter) => ({ ...prevFilter, labels }))
+    }, [labels])
 
     return <section className="toy-filter">
         <input type="text"

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { MultipleSelectChip } from "../cmps/multiple-select-chip"
 import { toyService } from "../services/toy.service"
-import { saveToy } from "../store/toy.action"
+import { saveToy } from "../store/toy/toy.action"
 
 export function ToyEdit() {
     const navigate = useNavigate()
