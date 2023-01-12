@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react"
 import { useState } from "react"
 import { useDispatch } from "react-redux"
-import { MultipleSelectChip } from "../pages/multiple-select-chip"
 import { toyService } from "../services/toy.service"
 import { SET_FILTER, SET_SORT } from "../store/app-reducer"
+import { MultipleSelectChip } from "./multiple-select-chip"
 
 export function ToyFilter() {
     const dispatch = useDispatch()
@@ -15,7 +15,6 @@ export function ToyFilter() {
 
     function handleChange({ target }) {
         let { name, value } = target
-        // if (type === 'checkbox' && name === 'inStock') value = elInStockRef.current.checked ? true : false
         if ( name === 'inStock') value = elInStockRef.current.checked ? true : false
         setFilter((prevFilter) => { return { ...prevFilter, [name]: value, labels } })
     }

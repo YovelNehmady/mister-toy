@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
+import { MultipleSelectChip } from "../cmps/multiple-select-chip"
 import { toyService } from "../services/toy.service"
 import { saveToy } from "../store/toy.action"
-import { MultipleSelectChip } from "./multiple-select-chip"
 
 export function ToyEdit() {
     const navigate = useNavigate()
@@ -16,17 +16,18 @@ export function ToyEdit() {
         loadToy()
     }, [])
 
-    function loadToy() {
-        toyService.getById(toyId)
-            .then(toy => {
-                setToyToEdit(toy)
-                setLabels(toy.labels)
-            })
+    async function loadToy() {
+        const toy = await toyService.getById(toyId)
+        try {
+            setToyToEdit(toy)
+            setLabels(toy.labels)
+        } catch (err) {
+            console.error(err)
+        }
     }
 
     function onSubmit(ev) {
         ev.preventDefault()
-        console.log(labels)
         const newToy = { ...toyToEdit, labels }
         saveToy(newToy)
         navigate('/toy')

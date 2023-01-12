@@ -76,7 +76,7 @@ function updateScore(diff) {
 
 function logout() {
     return httpService.post(BASE_URL + 'logout')
-        .then(()=>{
+        .then(() => {
             sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN)
         })
 }
