@@ -1,60 +1,47 @@
 const express = require('express')
-const toyService = require('./services/toy.service.js')
+const cookieParser = require('cookie-parser')
 const cors = require('cors')
-
+const path = require('path')
 
 const app = express()
+const http = require('http').createServer(app)
 
-// app.use(express.static('public'))
+// Express App Config
+app.use(cookieParser())
 app.use(express.json())
+app.use(express.static('public'))
 
-const corsOptions = {
-    origin: ['http://127.0.0.1:8080', 'http://localhost:8080', 'http://127.0.0.1:3000', 'http://localhost:3000'],
-    credentials: true
+if (process.env.NODE_ENV === 'production') {
+    // Express serve static files on production environment
+    app.use(express.static(path.resolve(__dirname, 'public')))
+} else {
+    // Configuring CORS
+    const corsOptions = {
+        // Make sure origin contains the url your frontend is running on
+        origin: ['http://127.0.0.1:8080', 'http://localhost:8080','http://127.0.0.1:3000', 'http://localhost:3000'],
+        credentials: true
+    }
+    app.use(cors(corsOptions))
 }
-app.use(cors(corsOptions))
 
-//TOY API
+const authRoutes = require('./api/auth/auth.routes')
+const userRoutes = require('./api/user/user.routes')  
+const toyRoutes = require('./api/toy/toy.routes')
 
-//List
-app.get('/api/toy/', (req, res) => {
-    toyService.query()
-        .then(toys => res.send(toys))
+// routes
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userRoutes)
+app.use('/api/toy', toyRoutes)
+
+// Make every server-side-route to match the index.html
+// so when requesting http://localhost:3030/index.html/car/123 it will still respond with
+// our SPA (single page app) (the index.html file) and allow vue-router to take it from there
+app.get('/**', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
-//Read
-app.get('/api/toy/:toyId', (req, res) => {
-    const { toyId } = req.params
-    toyService.get(toyId)
-        .then(toy => {
-            res.send(toy)
-        })
+const logger = require('./services/logger.service')
+const port = process.env.PORT || 3030
+http.listen(port, () => {
+    logger.info('Server is running on port: ' + port)
 })
-
-//Update - put
-app.put('/api/toy/', (req, res) => {
-    const toy = req.body
-    toyService.save(toy)
-        .then(savedToy => res.send(savedToy))
-})
-
-//Create - post
-app.post('/api/toy/', (req, res) => {
-    const toy = req.body
-    toyService.save(toy)
-        .then(savedToy => res.send(savedToy))
-})
-
-//Remove
-app.delete('/api/toy/:toyId', (req, res) => {
-    const { toyId } = req.params
-    toyService.remove(toyId)
-        .then(toys => res.send(toys))
-        .catch(err => {
-            console.log('Error:', err)
-            res.status(401).send('Unauthorized')
-        })
-})
-
-
-app.listen(3030, () => console.log('Server ready at port 3030! http://localhost:3030/'))

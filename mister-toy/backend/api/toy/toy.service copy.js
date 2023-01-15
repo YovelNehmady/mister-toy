@@ -1,5 +1,5 @@
-const utilService = require('./util.service.js')
-let toys = require('../data/toy.json')
+const utilService = require('../../services/util.service.js')
+let toys = require('../../data/toy.json')
 
 module.exports = {
     query,
@@ -38,6 +38,3 @@ function remove(toyId) {
     toys.splice(idx, 1)
     return utilService.writeToysToFile(toys)
 }
-
-
-

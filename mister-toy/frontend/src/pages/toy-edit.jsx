@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { MultipleSelectChip } from "../cmps/multiple-select-chip"
+import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { toyService } from "../services/toy.service"
 import { saveToy } from "../store/toy/toy.action"
 
@@ -23,14 +24,22 @@ export function ToyEdit() {
             setLabels(toy.labels)
         } catch (err) {
             console.error(err)
+            showErrorMsg('Something went wrong, please try again...')
         }
     }
-
-    function onSubmit(ev) {
+    
+    async function onSubmit(ev) {
         ev.preventDefault()
         const newToy = { ...toyToEdit, labels }
-        saveToy(newToy)
-        navigate('/toy')
+        try {
+            await saveToy(newToy)
+            const msg = toyId ? 'Toy edited' : 'Toy added'
+            showSuccessMsg(msg)
+            navigate('/toy')
+        } catch (err) {
+            console.error(err)
+            showErrorMsg('Something went wrong, please try again...')
+        }
     }
 
     function handleChange({ target }) {

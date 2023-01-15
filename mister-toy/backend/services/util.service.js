@@ -15,7 +15,6 @@ function writeToysToFile(bugs) {
     })
 }
 
-
 function makeId(length = 5) {
     let text = '';
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';

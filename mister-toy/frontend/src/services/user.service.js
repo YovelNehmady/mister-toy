@@ -9,6 +9,7 @@ export const userService = {
     logout,
     signup,
     getById,
+    getEmptyCredentials,
 }
 
 window.us = userService
@@ -18,19 +19,19 @@ function getById(userId) {
 }
 
 async function login(credentials) {
+    console.log(credentials)
     try {
-        return await httpService.post(BASE_URL + 'login', credentials)
-
+        return await httpService.post('auth/login', credentials)
     } catch (err) {
         console.log('err:', err)
         throw new Error('Invalid login')
     }
 }
 
-async function signup({ username, password, fullname }) {
+async function signup({ username, password, fullname, isAdmin }) {
     try {
-        const user = { username, password, fullname, score: 10000 }
-        return await httpService.post(BASE_URL + 'signup', user)
+        const user = { username, password, fullname, isAdmin }
+        return await httpService.post('auth/signup', user)
     } catch (err) {
         console.log('err:', err)
         throw new Error('Invalid login')
@@ -39,4 +40,12 @@ async function signup({ username, password, fullname }) {
 
 function logout() {
     return httpService.post(BASE_URL + 'logout')
+}
+
+function getEmptyCredentials() {
+    return {
+        fullname: '',
+        username: '',
+        password: '',
+    }
 }

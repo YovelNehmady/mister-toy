@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { ToyFilter } from "../cmps/toy-filter"
 import { ToyList } from "../cmps/toy-list"
+import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { loadToys, removeToy } from "../store/toy/toy.action"
 
 export function ToyIndex() {
@@ -14,8 +15,14 @@ export function ToyIndex() {
         loadToys(filterBy, sortBy)
     }, [filterBy, sortBy])
 
-    function onRemoveToy(toyId) {
-        removeToy(toyId)
+    async function onRemoveToy(toyId) {
+        try {
+            removeToy(toyId)
+            showSuccessMsg('Toy removed')
+        } catch (err) {
+            console.error(err)
+            showErrorMsg('Something went wrong, please try again...')
+        }
     }
 
     return <section className="toy-index">

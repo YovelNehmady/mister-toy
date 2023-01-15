@@ -1,20 +1,12 @@
 
 import { useState } from 'react'
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
+import { userService } from '../services/user.service.js'
 import { signup, login } from '../store/user/user.action.js'
-
-
-function getEmptyCredentials() {
-    return {
-        fullname: '',
-        username: 'admin',
-        password: 'admin',
-    }
-}
 
 export function LoginSignup() {
 
-    const [credentials, setCredentials] = useState(getEmptyCredentials())
+    const [credentials, setCredentials] = useState(userService.getEmptyCredentials())
     const [isSignupState, setIsSignupState] = useState(false)
 
     function handleCredentialsChange(ev) {
@@ -23,10 +15,16 @@ export function LoginSignup() {
         setCredentials((prevCreds) => ({ ...prevCreds, [field]: value }))
     }
 
-    function onSubmit(ev) {
+   async function onSubmit(ev) {
         ev.preventDefault()
-        const func = isSignupState ? signup : login
-        return func(credentials)
+        try {
+            const func = isSignupState ? signup : login
+            await func(credentials)
+            const msg = isSignupState ? 'User created' : 'User loged in'
+            showSuccessMsg(msg) 
+        } catch (error) {
+            showErrorMsg()
+        }
     }
 
     function onToggleSignupState() {
@@ -74,6 +72,4 @@ export function LoginSignup() {
             </a >
         </div>
     </div >
-
 }
-
