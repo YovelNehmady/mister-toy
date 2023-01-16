@@ -39,30 +39,6 @@ async function query(filterBy, sortBy) {
     }
 }
 
-function queryOLD(filterBy, sortBy) {
-    return httpService.get(BASE_URL)
-        .then(toys => {
-            if (filterBy.name) {
-                const regex = new RegExp(filterBy.name, 'i')
-                toys = toys.filter(toy => regex.test(toy.name))
-            }
-
-            if (filterBy.labels[0]) {
-                toys = toys.filter(toy => filterBy.labels.every(i => toy.labels.includes(i)))
-            }
-
-            if (filterBy.inStock) {
-                toys = toys.filter(toy => toy.inStock)
-            }
-
-            if (sortBy.sortBy) {
-                toys.sort((t1, t2) => (t1[sortBy.sortBy] - t2[sortBy.sortBy]) * sortBy.desc)
-            }
-
-            return toys
-        })
-}
-
 function getById(toyId) {
     return httpService.get(BASE_URL + toyId)
 }

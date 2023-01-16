@@ -23,6 +23,7 @@ export function AppHeader() {
             <nav>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/toy">Toys</NavLink>
+                <NavLink to="/review">Reviews</NavLink>
                 <NavLink to="/about">About Us</NavLink>
             </nav>
             {user && <section className="user-info">

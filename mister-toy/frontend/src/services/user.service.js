@@ -1,27 +1,19 @@
-import { storageService } from './async-storage.service.js'
 import { httpService } from './http.service.js'
 
-const STORAGE_KEY = 'userDB'
-const BASE_URL = 'user/'
+const BASE_URL = 'auth/'
 
 export const userService = {
     login,
     logout,
     signup,
-    getById,
     getEmptyCredentials,
 }
 
 window.us = userService
 
-function getById(userId) {
-    return storageService.get(STORAGE_KEY, userId)
-}
-
 async function login(credentials) {
-    console.log(credentials)
     try {
-        return await httpService.post('auth/login', credentials)
+        return await httpService.post(BASE_URL + 'login', credentials)
     } catch (err) {
         console.log('err:', err)
         throw new Error('Invalid login')
@@ -31,7 +23,7 @@ async function login(credentials) {
 async function signup({ username, password, fullname, isAdmin }) {
     try {
         const user = { username, password, fullname, isAdmin }
-        return await httpService.post('auth/signup', user)
+        return await httpService.post(BASE_URL + 'signup', user)
     } catch (err) {
         console.log('err:', err)
         throw new Error('Invalid login')

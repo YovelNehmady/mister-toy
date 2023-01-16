@@ -368,3 +368,502 @@
 15.1.2023, 21:00:28 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
 15.1.2023, 22:10:33 - INFO - Server is running on port: 3030 
 15.1.2023, 22:10:50 - INFO - Server is running on port: 3030 
+15.1.2023, 22:20:40 - INFO - Req was made 
+15.1.2023, 22:20:40 - INFO - Req was made 
+15.1.2023, 22:20:40 - INFO - Req was made 
+15.1.2023, 22:23:54 - INFO - Req was made 
+15.1.2023, 22:23:54 - INFO - Req was made 
+15.1.2023, 22:23:54 - INFO - Req was made 
+15.1.2023, 22:24:13 - INFO - Req was made 
+15.1.2023, 22:24:13 - INFO - Req was made 
+15.1.2023, 22:24:13 - INFO - Req was made 
+15.1.2023, 22:24:15 - INFO - Req was made 
+15.1.2023, 22:24:15 - INFO - Req was made 
+15.1.2023, 22:24:15 - INFO - Req was made 
+15.1.2023, 22:24:23 - DEBUG - auth.service - login with username: yovel 
+15.1.2023, 22:24:23 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+15.1.2023, 22:27:12 - INFO - Req was made 
+15.1.2023, 22:27:12 - INFO - Req was made 
+15.1.2023, 22:27:12 - INFO - Req was made 
+15.1.2023, 22:27:19 - DEBUG - auth.service - login with username: yovel 
+15.1.2023, 22:27:19 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+15.1.2023, 22:27:25 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 22:27:25 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 22:27:35 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 22:27:35 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 22:28:10 - DEBUG - auth.service - login with username: yovel 
+15.1.2023, 22:28:10 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+15.1.2023, 22:28:17 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 22:28:17 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 22:28:23 - DEBUG - auth.service - login with username: puki 
+15.1.2023, 22:28:23 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 22:29:22 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 22:29:22 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 22:29:28 - DEBUG - auth.service - login with username: yovel 
+15.1.2023, 22:29:28 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+15.1.2023, 22:30:03 - DEBUG - auth.service - signup with username: mumu, fullname: Mumu mu 
+15.1.2023, 22:30:03 - DEBUG - auth.route - new account created: {"username":"mumu","password":"$2b$10$Cm1/CQYGlHpQhJU2IjoGr.0w71gm9VqGClgNJHrppLU/J/tVt6VPa","fullname":"Mumu mu","isAdmin":false,"_id":"63c4624be1511ed6ec2a7198"} 
+15.1.2023, 22:30:03 - DEBUG - auth.service - login with username: mumu 
+15.1.2023, 22:30:04 - INFO - User login:  | {"_id":"63c4624be1511ed6ec2a7198","username":"mumu","fullname":"Mumu mu","isAdmin":false} 
+15.1.2023, 22:30:24 - DEBUG - auth.service - login with username: mumu 
+15.1.2023, 22:30:24 - INFO - User login:  | {"_id":"63c4624be1511ed6ec2a7198","username":"mumu","fullname":"Mumu mu","isAdmin":false} 
+15.1.2023, 22:30:42 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 22:30:42 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 22:31:28 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 22:31:28 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 22:31:56 - DEBUG - auth.service - login with username: yovel 
+15.1.2023, 22:31:56 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+15.1.2023, 22:33:14 - INFO - Server is running on port: 3030 
+15.1.2023, 22:33:16 - INFO - Server is running on port: 3030 
+15.1.2023, 22:35:40 - INFO - Server is running on port: 3030 
+15.1.2023, 22:37:01 - DEBUG - auth.service - signup with username: puki, fullname: Puki pa 
+15.1.2023, 22:37:01 - DEBUG - auth.service - signup with username: kuki, fullname: Kuki ka 
+15.1.2023, 22:37:01 - DEBUG - auth.service - signup with username: admin, fullname: Admin 
+15.1.2023, 22:37:01 - INFO - Server is running on port: 3030 
+15.1.2023, 22:37:24 - INFO - Server is running on port: 3030 
+15.1.2023, 22:37:33 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 22:37:33 - INFO - User login:  | {"_id":"63c463edb3687e9f6c8e4091","username":"admin","fullname":"Admin","isAdmin":true} 
+15.1.2023, 22:37:35 - INFO - Req was made 
+15.1.2023, 22:37:35 - INFO - Req was made 
+15.1.2023, 22:37:35 - INFO - Req was made 
+15.1.2023, 22:37:45 - DEBUG - auth.service - login with username: yovel 
+15.1.2023, 22:37:45 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+15.1.2023, 22:39:17 - INFO - Server is running on port: 3030 
+15.1.2023, 22:39:32 - INFO - Req was made 
+15.1.2023, 22:40:30 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 22:40:30 - INFO - User login:  | {"_id":"63c463edb3687e9f6c8e4091","username":"admin","fullname":"Admin","isAdmin":true} 
+15.1.2023, 22:41:34 - INFO - Server is running on port: 3030 
+15.1.2023, 23:36:25 - INFO - Req was made 
+15.1.2023, 23:36:25 - INFO - Req was made 
+15.1.2023, 23:36:25 - INFO - Req was made 
+15.1.2023, 23:36:30 - INFO - Req was made 
+15.1.2023, 23:36:30 - INFO - Req was made 
+15.1.2023, 23:36:30 - INFO - Req was made 
+16.1.2023, 0:12:21 - INFO - Server is running on port: 3030 
+16.1.2023, 0:12:26 - INFO - Server is running on port: 3030 
+16.1.2023, 0:12:26 - INFO - Server is running on port: 3030 
+16.1.2023, 0:13:03 - INFO - Req was made 
+16.1.2023, 0:15:45 - INFO - Req was made 
+16.1.2023, 0:15:49 - INFO - Req was made 
+16.1.2023, 0:19:16 - INFO - Req was made 
+16.1.2023, 0:19:38 - INFO - Req was made 
+16.1.2023, 0:20:42 - INFO - Req was made 
+16.1.2023, 0:22:14 - INFO - Req was made 
+16.1.2023, 0:22:25 - INFO - Req was made 
+16.1.2023, 0:22:25 - INFO - Req was made 
+16.1.2023, 0:22:25 - INFO - Req was made 
+16.1.2023, 0:22:33 - INFO - Req was made 
+16.1.2023, 0:22:33 - INFO - Req was made 
+16.1.2023, 0:22:33 - INFO - Req was made 
+16.1.2023, 0:22:35 - INFO - Req was made 
+16.1.2023, 0:22:35 - INFO - Req was made 
+16.1.2023, 0:22:35 - INFO - Req was made 
+16.1.2023, 0:22:37 - INFO - Req was made 
+16.1.2023, 0:22:37 - INFO - Req was made 
+16.1.2023, 0:22:37 - INFO - Req was made 
+16.1.2023, 0:22:48 - INFO - Req was made 
+16.1.2023, 0:22:48 - INFO - Req was made 
+16.1.2023, 0:22:48 - INFO - Req was made 
+16.1.2023, 0:28:14 - DEBUG - auth.service - login with username: yovel 
+16.1.2023, 0:28:14 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+16.1.2023, 13:25:53 - INFO - Server is running on port: 3030 
+16.1.2023, 13:26:21 - INFO - Req was made 
+16.1.2023, 13:26:31 - INFO - Req was made 
+16.1.2023, 13:26:31 - INFO - Req was made 
+16.1.2023, 13:26:31 - INFO - Req was made 
+16.1.2023, 13:26:40 - DEBUG - auth.service - login with username: yovel 
+16.1.2023, 13:26:40 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+16.1.2023, 13:30:39 - INFO - Server is running on port: 3030 
+16.1.2023, 13:33:11 - INFO - Server is running on port: 3030 
+16.1.2023, 13:35:02 - INFO - Server is running on port: 3030 
+16.1.2023, 13:35:05 - INFO - Req was made 
+16.1.2023, 13:35:05 - INFO - Req was made 
+16.1.2023, 13:35:05 - INFO - Req was made 
+16.1.2023, 13:35:20 - DEBUG - auth.service - login with username: admin 
+16.1.2023, 13:35:20 - INFO - User login:  | {"_id":"63c463edb3687e9f6c8e4091","username":"admin","fullname":"Admin","isAdmin":true} 
+16.1.2023, 13:35:29 - INFO - Req was made 
+16.1.2023, 13:35:29 - INFO - Req was made 
+16.1.2023, 13:35:29 - INFO - Req was made 
+16.1.2023, 13:36:07 - INFO - Server is running on port: 3030 
+16.1.2023, 13:36:18 - INFO - Req was made 
+16.1.2023, 13:36:18 - INFO - Req was made 
+16.1.2023, 13:36:18 - INFO - Req was made 
+16.1.2023, 13:38:21 - INFO - Server is running on port: 3030 
+16.1.2023, 13:39:06 - INFO - Req was made 
+16.1.2023, 13:39:06 - INFO - Req was made 
+16.1.2023, 13:39:06 - INFO - Req was made 
+16.1.2023, 13:39:24 - INFO - Req was made 
+16.1.2023, 13:39:24 - INFO - Req was made 
+16.1.2023, 13:39:24 - INFO - Req was made 
+16.1.2023, 13:39:27 - INFO - Req was made 
+16.1.2023, 13:39:27 - INFO - Req was made 
+16.1.2023, 13:39:27 - INFO - Req was made 
+16.1.2023, 13:39:49 - INFO - Req was made 
+16.1.2023, 13:39:49 - INFO - Req was made 
+16.1.2023, 13:39:49 - INFO - Req was made 
+16.1.2023, 13:39:55 - DEBUG - auth.service - login with username: admin 
+16.1.2023, 13:39:55 - INFO - User login:  | {"_id":"63c463edb3687e9f6c8e4091","username":"admin","fullname":"Admin","isAdmin":true} 
+16.1.2023, 13:40:07 - INFO - Req was made 
+16.1.2023, 13:40:07 - INFO - Req was made 
+16.1.2023, 13:40:07 - INFO - Req was made 
+16.1.2023, 13:41:11 - INFO - Server is running on port: 3030 
+16.1.2023, 13:41:23 - INFO - Server is running on port: 3030 
+16.1.2023, 13:41:29 - INFO - Req was made 
+16.1.2023, 13:41:29 - INFO - Req was made 
+16.1.2023, 13:41:29 - INFO - Req was made 
+16.1.2023, 13:41:42 - INFO - Server is running on port: 3030 
+16.1.2023, 13:42:34 - INFO - Server is running on port: 3030 
+16.1.2023, 13:43:41 - INFO - Req was made 
+16.1.2023, 13:48:29 - INFO - Req was made 
+16.1.2023, 13:48:30 - INFO - Req was made 
+16.1.2023, 13:48:30 - INFO - Req was made 
+16.1.2023, 13:48:30 - INFO - Req was made 
+16.1.2023, 13:48:37 - DEBUG - auth.service - login with username: yovel 
+16.1.2023, 13:48:37 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+16.1.2023, 13:58:13 - DEBUG - auth.service - login with username: yovel 
+16.1.2023, 13:58:14 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+16.1.2023, 13:58:16 - INFO - Req was made 
+16.1.2023, 13:58:16 - INFO - Req was made 
+16.1.2023, 13:58:16 - INFO - Req was made 
+16.1.2023, 14:00:30 - INFO - Req was made 
+16.1.2023, 14:00:30 - INFO - Req was made 
+16.1.2023, 14:00:30 - INFO - Req was made 
+16.1.2023, 14:01:52 - DEBUG - auth.service - login with username: yovel 
+16.1.2023, 14:01:52 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+16.1.2023, 14:01:54 - INFO - Req was made 
+16.1.2023, 14:01:54 - INFO - Req was made 
+16.1.2023, 14:01:54 - INFO - Req was made 
+16.1.2023, 14:31:47 - INFO - Req was made 
+16.1.2023, 14:35:42 - INFO - Req was made 
+16.1.2023, 14:36:02 - INFO - Req was made 
+16.1.2023, 14:37:37 - INFO - Req was made 
+16.1.2023, 15:23:56 - INFO - Server is running on port: 3030 
+16.1.2023, 16:12:39 - INFO - Req was made 
+16.1.2023, 16:12:41 - INFO - Req was made 
+16.1.2023, 16:12:41 - INFO - Req was made 
+16.1.2023, 16:12:41 - INFO - Req was made 
+16.1.2023, 16:14:55 - INFO - Server is running on port: 3030 
+16.1.2023, 16:15:06 - INFO - Req was made 
+16.1.2023, 16:15:09 - INFO - Req was made 
+16.1.2023, 16:15:09 - INFO - Req was made 
+16.1.2023, 16:15:09 - INFO - Req was made 
+16.1.2023, 16:50:36 - INFO - Req was made 
+16.1.2023, 16:50:36 - INFO - Req was made 
+16.1.2023, 16:50:36 - INFO - Req was made 
+16.1.2023, 16:50:43 - INFO - Req was made 
+16.1.2023, 16:50:43 - INFO - Req was made 
+16.1.2023, 16:50:43 - INFO - Req was made 
+16.1.2023, 16:50:45 - INFO - Req was made 
+16.1.2023, 16:50:46 - INFO - Req was made 
+16.1.2023, 16:50:46 - INFO - Req was made 
+16.1.2023, 16:50:46 - INFO - Req was made 
+16.1.2023, 17:22:56 - INFO - Server is running on port: 3030 
+16.1.2023, 17:23:05 - INFO - Server is running on port: 3030 
+16.1.2023, 17:23:21 - INFO - Server is running on port: 3030 
+16.1.2023, 17:23:36 - INFO - Req was made 
+16.1.2023, 17:24:01 - INFO - Server is running on port: 3030 
+16.1.2023, 17:24:05 - INFO - Req was made 
+16.1.2023, 17:24:05 - ERROR - cannot find reviews | ReferenceError: criteria is not defined 
+16.1.2023, 17:24:05 - ERROR - Failed to get reviews | ReferenceError: criteria is not defined 
+16.1.2023, 17:24:25 - INFO - Server is running on port: 3030 
+16.1.2023, 17:24:29 - INFO - Req was made 
+16.1.2023, 17:25:58 - INFO - Server is running on port: 3030 
+16.1.2023, 17:26:36 - INFO - Server is running on port: 3030 
+16.1.2023, 17:26:40 - INFO - Req was made 
+16.1.2023, 17:27:32 - INFO - Server is running on port: 3030 
+16.1.2023, 17:27:37 - INFO - Req was made 
+16.1.2023, 17:28:42 - INFO - Server is running on port: 3030 
+16.1.2023, 17:29:16 - INFO - Server is running on port: 3030 
+16.1.2023, 17:29:23 - INFO - Req was made 
+16.1.2023, 17:30:02 - INFO - Server is running on port: 3030 
+16.1.2023, 17:30:08 - INFO - Req was made 
+16.1.2023, 17:32:47 - INFO - Server is running on port: 3030 
+16.1.2023, 17:32:52 - INFO - Req was made 
+16.1.2023, 17:32:52 - ERROR - cannot find reviews | TypeError: collection.find(...).aggregate is not a function 
+16.1.2023, 17:32:52 - ERROR - Failed to get reviews | TypeError: collection.find(...).aggregate is not a function 
+16.1.2023, 17:33:12 - INFO - Server is running on port: 3030 
+16.1.2023, 17:33:23 - INFO - Server is running on port: 3030 
+16.1.2023, 17:33:29 - INFO - Req was made 
+16.1.2023, 17:34:30 - INFO - Server is running on port: 3030 
+16.1.2023, 17:36:42 - INFO - Server is running on port: 3030 
+16.1.2023, 17:36:46 - INFO - Req was made 
+16.1.2023, 17:36:46 - ERROR - cannot find reviews | ReferenceError: all is not defined 
+16.1.2023, 17:36:46 - ERROR - Failed to get reviews | ReferenceError: all is not defined 
+16.1.2023, 17:37:10 - INFO - Server is running on port: 3030 
+16.1.2023, 17:38:04 - INFO - Server is running on port: 3030 
+16.1.2023, 17:38:18 - INFO - Server is running on port: 3030 
+16.1.2023, 17:38:22 - INFO - Req was made 
+16.1.2023, 17:44:02 - INFO - Server is running on port: 3030 
+16.1.2023, 17:44:07 - INFO - Req was made 
+16.1.2023, 17:44:33 - INFO - Server is running on port: 3030 
+16.1.2023, 17:44:37 - INFO - Req was made 
+16.1.2023, 18:04:03 - INFO - Server is running on port: 3030 
+16.1.2023, 18:04:12 - INFO - Req was made 
+16.1.2023, 18:05:11 - INFO - Server is running on port: 3030 
+16.1.2023, 18:05:16 - INFO - Req was made 
+16.1.2023, 18:05:34 - INFO - Server is running on port: 3030 
+16.1.2023, 18:05:38 - INFO - Req was made 
+16.1.2023, 18:08:41 - INFO - Server is running on port: 3030 
+16.1.2023, 18:08:50 - INFO - Req was made 
+16.1.2023, 18:09:58 - INFO - Server is running on port: 3030 
+16.1.2023, 18:10:03 - INFO - Req was made 
+16.1.2023, 18:11:00 - INFO - Server is running on port: 3030 
+16.1.2023, 18:11:02 - INFO - Req was made 
+16.1.2023, 18:11:17 - INFO - Server is running on port: 3030 
+16.1.2023, 18:11:18 - INFO - Req was made 
+16.1.2023, 18:11:24 - INFO - Server is running on port: 3030 
+16.1.2023, 18:11:55 - INFO - Server is running on port: 3030 
+16.1.2023, 18:12:16 - INFO - Req was made 
+16.1.2023, 18:13:01 - INFO - Server is running on port: 3030 
+16.1.2023, 18:13:53 - INFO - Server is running on port: 3030 
+16.1.2023, 18:14:02 - INFO - Req was made 
+16.1.2023, 18:14:21 - INFO - Server is running on port: 3030 
+16.1.2023, 18:15:27 - INFO - Server is running on port: 3030 
+16.1.2023, 18:15:31 - INFO - Req was made 
+16.1.2023, 18:17:54 - INFO - Server is running on port: 3030 
+16.1.2023, 18:18:01 - INFO - Req was made 
+16.1.2023, 18:19:10 - INFO - Server is running on port: 3030 
+16.1.2023, 18:19:13 - INFO - Server is running on port: 3030 
+16.1.2023, 18:19:27 - INFO - Server is running on port: 3030 
+16.1.2023, 18:19:30 - INFO - Req was made 
+16.1.2023, 18:21:58 - INFO - Server is running on port: 3030 
+16.1.2023, 18:22:02 - INFO - Req was made 
+16.1.2023, 18:22:11 - INFO - Server is running on port: 3030 
+16.1.2023, 18:22:15 - INFO - Req was made 
+16.1.2023, 18:23:53 - INFO - Server is running on port: 3030 
+16.1.2023, 18:24:01 - INFO - Req was made 
+16.1.2023, 18:25:00 - INFO - Server is running on port: 3030 
+16.1.2023, 18:25:17 - INFO - Server is running on port: 3030 
+16.1.2023, 18:28:05 - INFO - Server is running on port: 3030 
+16.1.2023, 18:28:14 - INFO - Req was made 
+16.1.2023, 18:28:33 - INFO - Server is running on port: 3030 
+16.1.2023, 18:28:33 - INFO - Req was made 
+16.1.2023, 18:28:39 - INFO - Server is running on port: 3030 
+16.1.2023, 18:28:40 - INFO - Req was made 
+16.1.2023, 18:30:04 - INFO - Server is running on port: 3030 
+16.1.2023, 18:30:08 - INFO - Req was made 
+16.1.2023, 18:30:20 - INFO - Server is running on port: 3030 
+16.1.2023, 18:31:05 - INFO - Server is running on port: 3030 
+16.1.2023, 18:31:29 - INFO - Req was made 
+16.1.2023, 18:31:29 - ERROR - cannot find reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:31:29 - ERROR - Failed to get reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:31:59 - INFO - Req was made 
+16.1.2023, 18:31:59 - ERROR - cannot find reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:31:59 - ERROR - Failed to get reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:32:37 - INFO - Server is running on port: 3030 
+16.1.2023, 18:32:43 - INFO - Req was made 
+16.1.2023, 18:32:43 - ERROR - cannot find reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:32:43 - ERROR - Failed to get reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:32:46 - INFO - Req was made 
+16.1.2023, 18:32:46 - ERROR - cannot find reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:32:46 - ERROR - Failed to get reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:32:52 - INFO - Req was made 
+16.1.2023, 18:32:52 - ERROR - cannot find reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:32:52 - ERROR - Failed to get reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:33:38 - INFO - Req was made 
+16.1.2023, 18:33:38 - ERROR - cannot find reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:33:38 - ERROR - Failed to get reviews | MongoServerError: Each element of the 'pipeline' array must be an object 
+16.1.2023, 18:34:29 - INFO - Server is running on port: 3030 
+16.1.2023, 18:34:34 - INFO - Req was made 
+16.1.2023, 18:36:39 - INFO - Server is running on port: 3030 
+16.1.2023, 18:36:45 - INFO - Req was made 
+16.1.2023, 18:38:00 - INFO - Server is running on port: 3030 
+16.1.2023, 18:38:03 - INFO - Server is running on port: 3030 
+16.1.2023, 18:38:09 - INFO - Server is running on port: 3030 
+16.1.2023, 18:38:14 - INFO - Req was made 
+16.1.2023, 18:39:07 - INFO - Server is running on port: 3030 
+16.1.2023, 18:39:10 - INFO - Req was made 
+16.1.2023, 18:39:25 - INFO - Server is running on port: 3030 
+16.1.2023, 18:39:27 - INFO - Req was made 
+16.1.2023, 18:39:31 - INFO - Req was made 
+16.1.2023, 18:39:44 - INFO - Server is running on port: 3030 
+16.1.2023, 18:39:57 - INFO - Server is running on port: 3030 
+16.1.2023, 18:39:58 - INFO - Req was made 
+16.1.2023, 18:40:14 - INFO - Server is running on port: 3030 
+16.1.2023, 18:40:18 - INFO - Req was made 
+16.1.2023, 18:44:53 - INFO - Server is running on port: 3030 
+16.1.2023, 18:45:39 - INFO - Server is running on port: 3030 
+16.1.2023, 18:45:52 - INFO - Req was made 
+16.1.2023, 18:45:52 - INFO - Req was made 
+16.1.2023, 18:45:52 - INFO - Req was made 
+16.1.2023, 18:46:02 - DEBUG - auth.service - login with username: yovel 
+16.1.2023, 18:46:03 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+16.1.2023, 18:47:50 - INFO - Server is running on port: 3030 
+16.1.2023, 18:47:59 - INFO - Req was made 
+16.1.2023, 19:38:14 - INFO - Server is running on port: 3030 
+16.1.2023, 19:38:16 - INFO - Req was made 
+16.1.2023, 19:40:22 - INFO - Server is running on port: 3030 
+16.1.2023, 19:40:35 - INFO - Server is running on port: 3030 
+16.1.2023, 19:40:39 - INFO - Req was made 
+16.1.2023, 19:40:39 - ERROR - cannot find reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:40:39 - ERROR - Failed to get reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:40:59 - INFO - Server is running on port: 3030 
+16.1.2023, 19:41:03 - INFO - Req was made 
+16.1.2023, 19:41:03 - ERROR - cannot find reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:41:03 - ERROR - Failed to get reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:41:10 - INFO - Server is running on port: 3030 
+16.1.2023, 19:41:15 - INFO - Req was made 
+16.1.2023, 19:41:15 - ERROR - cannot find reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:41:15 - ERROR - Failed to get reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:41:22 - INFO - Server is running on port: 3030 
+16.1.2023, 19:41:26 - INFO - Req was made 
+16.1.2023, 19:41:32 - INFO - Server is running on port: 3030 
+16.1.2023, 19:41:38 - INFO - Req was made 
+16.1.2023, 19:41:48 - INFO - Server is running on port: 3030 
+16.1.2023, 19:41:50 - INFO - Req was made 
+16.1.2023, 19:41:50 - ERROR - cannot find reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:41:50 - ERROR - Failed to get reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:41:56 - INFO - Server is running on port: 3030 
+16.1.2023, 19:41:58 - INFO - Req was made 
+16.1.2023, 19:41:58 - ERROR - cannot find reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:41:58 - ERROR - Failed to get reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:42:09 - INFO - Server is running on port: 3030 
+16.1.2023, 19:42:11 - INFO - Req was made 
+16.1.2023, 19:42:11 - ERROR - cannot find reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:42:11 - ERROR - Failed to get reviews | TypeError: Cannot read properties of undefined (reading '_id') 
+16.1.2023, 19:42:21 - INFO - Server is running on port: 3030 
+16.1.2023, 19:42:25 - INFO - Req was made 
+16.1.2023, 19:43:32 - INFO - Server is running on port: 3030 
+16.1.2023, 19:43:35 - INFO - Server is running on port: 3030 
+16.1.2023, 19:43:36 - INFO - Req was made 
+16.1.2023, 19:43:49 - INFO - Server is running on port: 3030 
+16.1.2023, 19:43:50 - INFO - Req was made 
+16.1.2023, 19:44:28 - INFO - Server is running on port: 3030 
+16.1.2023, 19:44:29 - INFO - Req was made 
+16.1.2023, 19:45:50 - INFO - Server is running on port: 3030 
+16.1.2023, 19:47:51 - INFO - Server is running on port: 3030 
+16.1.2023, 19:47:56 - INFO - Server is running on port: 3030 
+16.1.2023, 19:48:23 - INFO - Server is running on port: 3030 
+16.1.2023, 19:48:26 - INFO - Req was made 
+16.1.2023, 19:48:35 - INFO - Server is running on port: 3030 
+16.1.2023, 19:48:36 - INFO - Req was made 
+16.1.2023, 19:48:36 - ERROR - cannot find reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 19:48:36 - ERROR - Failed to get reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 19:48:41 - INFO - Server is running on port: 3030 
+16.1.2023, 19:48:42 - INFO - Req was made 
+16.1.2023, 19:48:54 - INFO - Server is running on port: 3030 
+16.1.2023, 19:48:59 - INFO - Req was made 
+16.1.2023, 19:48:59 - ERROR - cannot find reviews | TypeError: Cannot read properties of undefined (reading 'txt') 
+16.1.2023, 19:48:59 - ERROR - Failed to get reviews | TypeError: Cannot read properties of undefined (reading 'txt') 
+16.1.2023, 19:49:46 - INFO - Server is running on port: 3030 
+16.1.2023, 19:49:48 - INFO - Req was made 
+16.1.2023, 19:52:02 - INFO - Server is running on port: 3030 
+16.1.2023, 19:53:39 - INFO - Server is running on port: 3030 
+16.1.2023, 19:54:15 - INFO - Server is running on port: 3030 
+16.1.2023, 19:54:24 - INFO - Server is running on port: 3030 
+16.1.2023, 19:54:28 - INFO - Server is running on port: 3030 
+16.1.2023, 19:57:14 - INFO - Req was made 
+16.1.2023, 19:57:40 - INFO - Server is running on port: 3030 
+16.1.2023, 19:57:45 - INFO - Req was made 
+16.1.2023, 19:57:45 - INFO - Req was made 
+16.1.2023, 19:57:45 - INFO - Req was made 
+16.1.2023, 19:57:46 - INFO - Req was made 
+16.1.2023, 19:57:46 - ERROR - Failed to get reviews | ReferenceError: filterBy is not defined 
+16.1.2023, 19:57:56 - INFO - Server is running on port: 3030 
+16.1.2023, 19:57:59 - INFO - Req was made 
+16.1.2023, 19:57:59 - INFO - Req was made 
+16.1.2023, 19:57:59 - INFO - Req was made 
+16.1.2023, 19:58:00 - INFO - Req was made 
+16.1.2023, 19:58:00 - ERROR - Failed to get reviews | ReferenceError: filterBy is not defined 
+16.1.2023, 19:59:02 - INFO - Req was made 
+16.1.2023, 19:59:02 - ERROR - Failed to get reviews | ReferenceError: filterBy is not defined 
+16.1.2023, 19:59:04 - INFO - Req was made 
+16.1.2023, 19:59:04 - ERROR - Failed to get reviews | ReferenceError: filterBy is not defined 
+16.1.2023, 19:59:10 - INFO - Req was made 
+16.1.2023, 19:59:10 - ERROR - Failed to get reviews | ReferenceError: filterBy is not defined 
+16.1.2023, 19:59:26 - INFO - Req was made 
+16.1.2023, 19:59:26 - ERROR - Failed to get reviews | ReferenceError: filterBy is not defined 
+16.1.2023, 19:59:28 - INFO - Req was made 
+16.1.2023, 19:59:28 - ERROR - Failed to get reviews | ReferenceError: filterBy is not defined 
+16.1.2023, 19:59:51 - INFO - Server is running on port: 3030 
+16.1.2023, 19:59:57 - INFO - Req was made 
+16.1.2023, 20:00:02 - INFO - Req was made 
+16.1.2023, 20:00:21 - INFO - Server is running on port: 3030 
+16.1.2023, 20:00:27 - INFO - Req was made 
+16.1.2023, 20:00:27 - INFO - Req was made 
+16.1.2023, 20:00:27 - INFO - Req was made 
+16.1.2023, 20:00:28 - INFO - Req was made 
+16.1.2023, 20:00:31 - INFO - Req was made 
+16.1.2023, 20:01:15 - INFO - Server is running on port: 3030 
+16.1.2023, 20:01:17 - INFO - Req was made 
+16.1.2023, 20:01:17 - INFO - Req was made 
+16.1.2023, 20:01:17 - INFO - Req was made 
+16.1.2023, 20:01:18 - INFO - Req was made 
+16.1.2023, 20:01:18 - INFO - Req was made 
+16.1.2023, 20:01:19 - INFO - Req was made 
+16.1.2023, 20:01:20 - INFO - Req was made 
+16.1.2023, 20:01:32 - INFO - Server is running on port: 3030 
+16.1.2023, 20:01:36 - INFO - Req was made 
+16.1.2023, 20:01:36 - INFO - Req was made 
+16.1.2023, 20:01:36 - INFO - Req was made 
+16.1.2023, 20:01:36 - INFO - Req was made 
+16.1.2023, 20:01:45 - INFO - Server is running on port: 3030 
+16.1.2023, 20:01:47 - INFO - Req was made 
+16.1.2023, 20:01:47 - INFO - Req was made 
+16.1.2023, 20:01:47 - INFO - Req was made 
+16.1.2023, 20:01:48 - INFO - Req was made 
+16.1.2023, 20:02:34 - INFO - Server is running on port: 3030 
+16.1.2023, 20:02:37 - INFO - Req was made 
+16.1.2023, 20:02:37 - ERROR - cannot find reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 20:02:37 - ERROR - Failed to get reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 20:02:58 - INFO - Req was made 
+16.1.2023, 20:03:03 - INFO - Req was made 
+16.1.2023, 20:04:26 - INFO - Req was made 
+16.1.2023, 20:04:26 - ERROR - cannot find reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 20:04:26 - ERROR - Failed to get reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 20:04:28 - INFO - Req was made 
+16.1.2023, 20:04:28 - ERROR - cannot find reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 20:04:28 - ERROR - Failed to get reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 20:04:42 - INFO - Req was made 
+16.1.2023, 20:04:42 - ERROR - Failed to get reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 20:04:42 - ERROR - cannot find reviews | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+16.1.2023, 20:05:02 - INFO - Req was made 
+16.1.2023, 20:05:05 - INFO - Req was made 
+16.1.2023, 20:06:17 - INFO - Req was made 
+16.1.2023, 20:06:52 - INFO - Req was made 
+16.1.2023, 20:06:55 - INFO - Req was made 
+16.1.2023, 20:11:25 - INFO - Req was made 
+16.1.2023, 20:11:27 - INFO - Req was made 
+16.1.2023, 20:11:27 - INFO - Req was made 
+16.1.2023, 20:11:27 - INFO - Req was made 
+16.1.2023, 20:11:53 - INFO - Req was made 
+16.1.2023, 20:11:58 - INFO - Req was made 
+16.1.2023, 20:12:45 - INFO - Req was made 
+16.1.2023, 20:13:04 - INFO - Req was made 
+16.1.2023, 20:13:16 - DEBUG - auth.service - login with username: yovel 
+16.1.2023, 20:13:17 - INFO - User login:  | {"_id":"63c44c7d2d2670efc88af377","username":"yovel","fullname":"Yovel the king","isAdmin":false} 
+16.1.2023, 20:13:23 - INFO - Req was made 
+16.1.2023, 20:13:28 - INFO - Req was made 
+16.1.2023, 20:13:33 - INFO - Req was made 
+16.1.2023, 20:26:08 - INFO - Req was made 
+16.1.2023, 20:26:08 - INFO - Req was made 
+16.1.2023, 20:26:08 - INFO - Req was made 
+16.1.2023, 20:26:10 - INFO - Req was made 
+16.1.2023, 20:26:11 - INFO - Req was made 
+16.1.2023, 20:26:11 - INFO - Req was made 
+16.1.2023, 20:26:11 - INFO - Req was made 
+16.1.2023, 20:26:12 - INFO - Req was made 
+16.1.2023, 20:26:13 - INFO - Req was made 
+16.1.2023, 20:26:13 - INFO - Req was made 
+16.1.2023, 20:26:13 - INFO - Req was made 
+16.1.2023, 20:26:14 - INFO - Req was made 
+16.1.2023, 20:26:16 - INFO - Req was made 
+16.1.2023, 20:26:16 - INFO - Req was made 
+16.1.2023, 20:26:16 - INFO - Req was made 
+16.1.2023, 20:26:18 - INFO - Req was made 
+16.1.2023, 20:27:47 - INFO - Req was made 
+16.1.2023, 20:28:21 - INFO - Req was made 
+16.1.2023, 20:28:21 - INFO - Req was made 
+16.1.2023, 20:28:21 - INFO - Req was made 
+16.1.2023, 20:28:24 - INFO - Req was made 
+16.1.2023, 20:28:42 - INFO - Req was made 
+16.1.2023, 20:28:51 - INFO - Req was made 
+16.1.2023, 20:29:06 - INFO - Req was made 
+16.1.2023, 20:29:09 - INFO - Req was made 
+16.1.2023, 20:29:09 - INFO - Req was made 
+16.1.2023, 20:29:09 - INFO - Req was made 
+16.1.2023, 20:29:10 - INFO - Req was made 
+16.1.2023, 20:29:13 - INFO - Req was made 
+16.1.2023, 20:29:13 - INFO - Req was made 
+16.1.2023, 20:29:13 - INFO - Req was made 
+16.1.2023, 20:29:16 - INFO - Req was made 

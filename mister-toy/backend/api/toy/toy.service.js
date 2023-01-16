@@ -3,29 +3,26 @@ const logger = require('../../services/logger.service')
 const utilService = require('../../services/util.service')
 const ObjectId = require('mongodb').ObjectId
 
+module.exports = {
+    remove,
+    query,
+    getById,
+    add,
+    update,
+    addToyMsg,
+    removeToyMsg
+}
+
 async function query() {
     try {
         const collection = await dbService.getCollection('toy')
-        var toys = await collection.find().toArray()
+        const toys = await collection.find().toArray()
         return toys
     } catch (err) {
         logger.error('cannot find toys', err)
         throw err
     }
 }
-// async function query(filterBy={txt:''}) {
-//     try {
-//         const criteria = {
-//             vendor: { $regex: filterBy.txt, $options: 'i' }
-//         }
-//         const collection = await dbService.getCollection('toy')
-//         var toys = await collection.find(criteria).toArray()
-//         return toys
-//     } catch (err) {
-//         logger.error('cannot find toys', err)
-//         throw err
-//     }
-// }
 
 async function getById(toyId) {
     try {
@@ -96,14 +93,4 @@ async function removeToyMsg(toyId, msgId) {
         logger.error(`cannot add toy msg ${toyId}`, err)
         throw err
     }
-}
-
-module.exports = {
-    remove,
-    query,
-    getById,
-    add,
-    update,
-    addToyMsg,
-    removeToyMsg
 }

@@ -8,6 +8,7 @@ import { loadToys, removeToy } from "../store/toy/toy.action"
 
 export function ToyIndex() {
     const { toys } = useSelector(state => state.toyModule)
+    const { user } = useSelector(state => state.userModule)
     const { filterBy } = useSelector(state => state.appModule)
     const { sortBy } = useSelector(state => state.appModule)
 
@@ -27,7 +28,7 @@ export function ToyIndex() {
 
     return <section className="toy-index">
         <ToyFilter />
-        <Link to={'/toy/edit'}><button>Add new toy</button></Link>
+        {user?.isAdmin && <Link to={'/toy/edit'}><button>Add new toy</button></Link>}
         <ToyList toys={toys} onRemoveToy={onRemoveToy} />
     </section>
 }

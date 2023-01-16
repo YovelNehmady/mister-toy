@@ -9,11 +9,10 @@ const router = express.Router()
 
 router.get('/', log, getToys)
 router.get('/:id', getToyById)
-router.post('/', requireAuth, addToy)
-router.put('/:id', requireAuth, updateToy)
-router.delete('/:id', requireAuth, removeToy)
-// router.delete('/:id', requireAuth, requireAdmin, removeToy)
-
+router.post('/', requireAuth,requireAdmin, addToy)
+router.put('/:id', requireAuth,requireAdmin, updateToy)
+router.delete('/:id', requireAuth, requireAdmin, removeToy)
+//MSG
 router.post('/:id/msg', requireAuth, addToyMsg)
 router.delete('/:id/msg/:msgId', requireAuth, removeToyMsg)
 
